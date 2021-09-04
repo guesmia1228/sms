@@ -3,10 +3,14 @@ class Student < ApplicationRecord
   before_save :generate_random_number_registration
 
   def generate_random_number_registration
-    number = "#{Date.today.year}-#{rand(0..1000000)}"
-    while Student.exists?(:registration => number)
-      number = "#{Date.today.year}-#{rand(0..1000000)}"
+    number_generate = random_number
+    while Student.exists?(registration: number_generate)
+      number_generate = random_number
     end
-    self.registration = number
+    self.registration = number_generate
+  end
+
+  def random_number
+    "#{Date.today.year}-#{rand(0..1000000)}"
   end
 end
