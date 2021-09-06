@@ -1,0 +1,98 @@
+@media (min-width: 870px) and (max-width: 1100px) {
+
+  .student {
+    left: 17.38%;
+    top: 20.38%;
+    bottom: 66%;
+    font-size: 4.09vh;
+  }
+  
+  }
+  
+  @media (max-width: 1569px) {
+    .img-home {
+      left: 704px;
+    }
+  }
+  
+  @media (max-width: 1226px) {
+    .img-home {
+      left: 635px;
+    }
+  }
+  
+  @media (max-width: 1160px) {
+    .img-home {
+      left: 585px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .img-home {
+      width: 500px;
+      height: 460px;
+      left: 505px;
+    }
+  }
+  
+  @media (max-width: 1016px) {
+    .img-home {
+      display: none;
+    }
+    .people {
+      left: 350px;   
+    }
+    .student-title {
+      left: 300px;
+    }
+    .department-svg {
+      left: 350px;
+    }
+    .department-title {
+      left: 260px;
+    }
+    .book-svg {
+      left: 350px;
+    }
+    .course-title {
+      left: 300px;
+    }
+    .college-subject-svg {
+      left: 350px;
+    }
+    .college-subject-title {
+      left: 240px;
+    }
+
+  }
+  
+  @media (max-width: 460px) {
+    .img-home {
+      display: none;
+    }
+    .people {
+      left: 200px;  
+    }
+    .student-title {
+      left: 135px;
+    }
+    .department-svg {
+      left: 200px;
+    }
+    .department-title {
+      left: 100px;
+    }
+    .book-svg {
+      left: 200px;
+    }
+    .course-title {
+      left: 145px;
+    }
+    .college-subject-svg {
+      left: 200px;
+    }
+    .college-subject-title {
+      left: 90px;
+    }
+
+  }
