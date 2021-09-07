@@ -39,26 +39,14 @@
     .img-home {
       display: none;
     }
-    .people {
+    .people, .department-svg, .book-svg,.college-subject-svg {
       left: 350px;   
     }
-    .student-title {
+    .student-title, .course-title {
       left: 300px;
-    }
-    .department-svg {
-      left: 350px;
     }
     .department-title {
       left: 260px;
-    }
-    .book-svg {
-      left: 350px;
-    }
-    .course-title {
-      left: 300px;
-    }
-    .college-subject-svg {
-      left: 350px;
     }
     .college-subject-title {
       left: 240px;
@@ -70,26 +58,17 @@
     .img-home {
       display: none;
     }
-    .people {
+    .people, .book-svg, .department-svg, .college-subject-svg {
       left: 200px;  
     }
     .student-title {
       left: 135px;
     }
-    .department-svg {
-      left: 200px;
-    }
     .department-title {
       left: 100px;
     }
-    .book-svg {
-      left: 200px;
-    }
     .course-title {
       left: 145px;
-    }
-    .college-subject-svg {
-      left: 200px;
     }
     .college-subject-title {
       left: 90px;
