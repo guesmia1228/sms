@@ -1,67 +1,8 @@
-  
-  @media (max-width: 1569px) {
-    .img-home {
-      left: 704px;
-    }
-  }
-  
-  @media (max-width: 1226px) {
-    .img-home {
-      left: 635px;
-    }
-  }
-  
-  @media (max-width: 1160px) {
-    .img-home {
-      left: 585px;
-    }
-  }
-  
-  @media (max-width: 900px) {
-    .img-home {
-      width: 500px;
-      height: 460px;
-      left: 505px;
-    }
-  }
-  
   @media (max-width: 1016px) {
+    .left {
+      width: 100%;
+    }
     .img-home {
       display: none;
     }
-    .people, .department-svg, .book-svg,.college-subject-svg {
-      left: 350px;   
-    }
-    .student-title, .course-title {
-      left: 300px;
-    }
-    .department-title {
-      left: 260px;
-    }
-    .college-subject-title {
-      left: 240px;
-    }
-
-  }
-  
-  @media (max-width: 460px) {
-    .img-home {
-      display: none;
-    }
-    .people, .book-svg, .department-svg, .college-subject-svg {
-      left: 200px;  
-    }
-    .student-title {
-      left: 135px;
-    }
-    .department-title {
-      left: 100px;
-    }
-    .course-title {
-      left: 145px;
-    }
-    .college-subject-title {
-      left: 90px;
-    }
-
   }
