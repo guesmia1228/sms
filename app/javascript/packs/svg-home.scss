@@ -1,50 +1,33 @@
-.svg-home {
-  left: 19.38%;
-  right: 75.21%;
-  top: 16.02%;
-  bottom: 78.93%;
-  
-  background: #E3A400;
-}
-
-.department-svg {
+.department-svg,.book-svg, .people, .college-subject-svg {
   position: absolute;
   width: 70px;
   height: 81px;
+
+  color: #E3A400;
+}
+
+.department-svg {
   left: 273px;
   top: 264px;
 
-  color: #E3A400;
+  background-color: #E3A400;
 
 }
 
 .book-svg {
-  position: absolute;
   left: 275px;
-  width: 70px;
-  height: 81px;
   top: 440px;
-
-  color: #E3A400;
 }
 
 .people {
-  position: absolute;
   left: 275px;
-  width: 70px;
-  height: 81px;
   top: 110px;
 
-  color: #E3A400;
+  background-color: #E3A400;
 
 }
 
 .college-subject-svg {
-  position: absolute;
   left: 275px;
-  width: 70px;
-  height: 81px;
   top: 620px;
-
-  color: #E3A400;
 }
