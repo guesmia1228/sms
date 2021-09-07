@@ -6,89 +6,44 @@
   top: 180px;
 }
 
-.student-title {
+.student-title, .department-title, .course-title, .college-subject-title {
   position: absolute;
   width: 287px;
   height: 24px;
-  left: 225px;
-  top: 210px;
-  
+
   font-family: Domine;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 24px;
-  /* identical to box height, or 67% */
-  
+
   display: flex;
   align-items: center;
   text-align: center;
   
   color: #FFFFFF;
+
+}
+
+.student-title {
+  left: 225px;
+  top: 210px;
 
 }
 
 .department-title {
-  position: absolute;
-  width: 287px;
-  height: 24px;
   left: 187px;
   top: 380px;
-
-  font-family: Domine;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 24px;
-/* identical to box height, or 67% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #FFFFFF;
 }
 
 .course-title {
-  position: absolute;
-  width: 287px;
-  height: 24px;
   left: 225px;
   top: 550px;
-  
-  font-family: Domine;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 24px;
-  /* identical to box height, or 67% */
-  
-  display: flex;
-  align-items: center;
-  text-align: center;
-  
-  color: #FFFFFF;
-
 }
 
 .college-subject-title {
-  position: absolute;
-  width: 287px;
-  height: 24px;
   left: 167px;
   top: 740px;
 
-  font-family: Domine;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
   line-height: 40px;
-/* identical to box height, or 67% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #FFFFFF;
-
 }
