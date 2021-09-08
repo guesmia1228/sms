@@ -1,72 +1,41 @@
+.table {
+  position: absolute;
+  width: 1182px;
+  height: 200px;
+  margin: 40px 0 0 360px;
+
+  background-color: #fff;
+}
 .back-home {
   position: absolute;
   left: 83px;
   top: 40px;
 }
 
-h2 {
-  position: absolute;
-width: 322px;
-height: 34px;
-left: 210px;
-top: 212px;
+.student-title-she {
+  width: 50%;
+  margin: 5em 2em 0 7.4em ;
 
-font-family: Domine;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 24px;
-/* or 50% */
-
-
-color: #FFFFFF;
-}
-
-h3 {
-position: absolute;
-width: 364px;
-height: 27px;
-left: 210px;
-top: 305px;
-
-font-family: Domine;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 27px;
-
-color: #FFFFFF;
-}
-
-.table {
-  position: absolute;
-  width: 1182px;
-  height: 200px;
-  left: 210px;
-  top: 447px;
-  background-color: #fff;
-}
-
-.form-control {
-  position: absolute;
-width: 420px;
-height: 38px;
-left: 210px;
-top: 350px;
-
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 50%;
+  color: #FFFFFF;
+    h2 {
+      font-size: 58px;
+    }
+    .form-control {
+      width: 420px;
+      height: 38px;
+    }
 }
 
 .create {
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
+  position: relative;
+  width: 193px;
+  height: 41px;
 
-left: 1108px;
-top: 350px;
+  font-weight: bold;
 
-
-position: relative;
-width: 193px;
-height: 41px;
+  left: 1280px;
+  bottom: 40px;
 }
