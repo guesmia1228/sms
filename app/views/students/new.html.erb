@@ -3,11 +3,11 @@
 <div class="student-title-she">
 <%= form_with model: @student do |form| %>
 <h2>+STUDENT<h2>
-<%= form.label 'Name:', style:'font-size: 20px'%>
+<%= form.label 'Name:'%>
     <%= form.text_field :name, class:'form-control'%>
           <% @student.errors.full_messages_for(:name).each do |message| %>
-          <div style="font-size: 20px"><%= message %></div>
+          <div class="message-error"><%= message %></div>
           <% end %>
-    <%= form.submit 'Submit', class:'btn btn-primary', style: 'margin-top: 10px;'%> 
+    <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
 <% end%>
 </div>
