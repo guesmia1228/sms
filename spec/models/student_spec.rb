@@ -28,6 +28,10 @@ RSpec.describe Student, type: :model do
       end
     end
   end
+
+  describe '#generate_random_number_registration' do
+  end
 end
+
 
 
