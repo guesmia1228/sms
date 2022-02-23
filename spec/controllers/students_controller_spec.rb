@@ -50,5 +50,15 @@ RSpec.describe StudentsController, type: :controller do
     
   end
 
+  describe "DELETE #destroy" do
+    context "success" do
+      it "deleted student" do
+        
+      end
+    end
+    context "fail" do
+    end
+  end
+
 
 end
