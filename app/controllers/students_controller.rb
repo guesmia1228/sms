@@ -17,6 +17,12 @@ class StudentsController < ApplicationController
     end
   end
 
+  def destroy
+    Student.delete(params[:id])
+    redirect_to students_path
+    # olhar na regra de negócio se existe uma proibição de exclusão de aluno por turma, curso e etc.
+  end
+
   private
 
   def student_params
