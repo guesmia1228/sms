@@ -51,13 +51,24 @@ RSpec.describe StudentsController, type: :controller do
   end
 
   describe "DELETE #destroy" do
+    let!(:student) { create(:student) }
+    let(:action) {delete :destroy, params: id}
+
     context "success" do
+      let(:id) { {id: student.id} }
+
       it "deleted student" do
-        
+        expect {action}.to change{Student.count}.by -1
+      end
+      it "Redirection to Students pag" do
+        action
+        expect(response).to redirect_to students_path
       end
     end
+
     context "fail" do
     end
+    
   end
 
 
