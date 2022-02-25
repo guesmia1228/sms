@@ -1,8 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 @import "home";
 @import "home-queries";
-@import "students";
-@import "students-queries";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
@@ -10,5 +8,4 @@
 body {
   font-family: Domine;
   font-style: normal;
-  background: black;
 }
