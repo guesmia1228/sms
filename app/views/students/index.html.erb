@@ -24,7 +24,7 @@
         <td><%= student.registration %></td>
         <td>FALTA ADICIONAR</td>
         <td><%= image_tag 'pencil-fill.svg'%></td>
-        <td><%= link_to 'Delete', student_path(id: student.id), method: :delete %> </td>
+        <td><%= link_to 'Delete', student_path(id: student.id), method: :delete, data: { confirm: 'Tem certeza?' } %> </td>
       </tr>
     <% end %>
   </tbody>
