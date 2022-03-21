@@ -1,18 +1,15 @@
-.left {
-  .menu-item {
-    text-align: center;
-    margin: 60px auto;
-    img {
-      width: 70px;
-      height: 81px;
-    }
-    a {
-      display: block;
-      padding: 10px;
+div {
+  display: inline-block;
+  margin: 3em;
+}
 
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 34px;
-    }
-  }
+main {
+  text-align: center;
+  margin: 12%;
+  font-size: 1.5em;
+}
+
+.item {
+  width: 2em;
+  height: 2em;
 }
