@@ -1,15 +1,14 @@
 <%= link_to 'BACK', root_path, class: 'btn btn-light back-home' %>
 
 <main>
+
 <div class="student-title-she">
   <h2>STUDENTS</h2>
-  <h3>Search by name or registration</h3>
-  <input type="text" class="form-control">
 </div>
 
-<%= link_to '+ STUDENTS', new_student_path, class: 'btn btn-light create' %>
+<%= link_to '+ STUDENTS', new_student_path, class: 'btn btn-light create-student' %>
 
-<table class="table table-borderless bg-light">
+<table class="table table-borderless col-sm-10 bg-light">
   <thead>
     <tr>
       <th scope="col">NAME</th>
@@ -23,7 +22,7 @@
         <td><%= student.name %></td>
         <td><%= student.registration %></td>
         <td>FALTA ADICIONAR</td>
-        <td><%= image_tag 'pencil-fill.svg'%></td>
+        <td><%= link_to 'Edit', edit_student_path(id: student.id), method: :GET  %> </td>
         <td><%= link_to 'Delete', student_path(id: student.id), method: :delete, data: { confirm: 'Tem certeza?' } %> </td>
       </tr>
     <% end %>
