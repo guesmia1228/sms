@@ -1,4 +1,7 @@
 class Course < ApplicationRecord
+  validates :name, presence: true
+  before_save :generate_random_number_indentifier
+
   has_many :student_courses
   has_many :students, through: :student_courses
 
