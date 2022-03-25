@@ -1,0 +1,35 @@
+<%= link_to 'BACK', root_path, class: 'btn btn-light back-home' %>
+
+<main>
+
+<div class="student-title-she">
+  <h2>COURSES</h2>
+</div>
+
+<%= link_to '+ COURSES', new_course_path, class: 'btn btn-light create-student' %>
+
+<table class="table table-borderless col-sm-10 bg-light">
+  <thead>
+    <tr>
+      <th scope="col">NAME</th>
+      <th scope="col">IDENTIFIER</th>
+      <th scope="col">College Subjects</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @courses.each do |course| %>
+      <tr>
+        <td><%= course.name %></td>
+        <td><%= course.identifier %></td>
+        <td>FALTA ADICIONAR</td>
+        <td>FALTA ADICIONAR</td>
+        <td><%= link_to 'Edit', edit_course_path(id: course.id), method: :GET  %> </td>
+        <td><%= link_to 'Delete', course_path(id: course.id), method: :delete, data: { confirm: 'Tem certeza?' } %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+</main>
