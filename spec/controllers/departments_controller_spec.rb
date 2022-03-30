@@ -38,7 +38,6 @@ RSpec.describe DepartmentsController, type: :controller do
         expect(response).to redirect_to departments_path
       end
       it "Department was saved" do
-        # posso usar para deletar um departamento usando -1
         expect {action}.to change{Department.count}.by 1
       end
     end
