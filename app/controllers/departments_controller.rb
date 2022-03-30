@@ -16,8 +16,12 @@ class DepartmentsController < ApplicationController
     end
   end
 
-  def update
+  def edit
     @department = Department.find(params[:id])
+  end
+
+  def update
+    department = Department.find(params[:id])
     if department.update(department_params)
       redirect_to departments_path
     else
