@@ -16,6 +16,21 @@ class DepartmentsController < ApplicationController
     end
   end
 
+  def update
+    @department = Department.find(params[:id])
+    if department.update(department_params)
+      redirect_to departments_path
+    else
+      render :edit
+    end
+    
+  end
+
+  def destroy
+    Department.delete(params[:id])
+    redirect_to departments_path
+  end
+
   private
 
   def department_params
