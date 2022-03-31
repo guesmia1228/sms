@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :students
   resources :courses
   resources :departments
+  resources :college_subjects
 end
