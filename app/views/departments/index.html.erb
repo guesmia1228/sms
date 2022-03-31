@@ -1,0 +1,33 @@
+<%= link_to 'BACK', root_path, class: 'btn btn-light back-home' %>
+
+<main>
+
+<div class="student-title-she">
+  <h2>Departments</h2>
+</div>
+
+<%= link_to '+ DEPARTMENTS', new_department_path, class: 'btn btn-light create-student' %>
+
+<table class="table table-borderless col-sm-10 bg-light">
+  <thead>
+    <tr>
+      <th scope="col">NAME</th>
+      <th scope="col">IDENTIFIER</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @departments.each do |department| %>
+      <tr>
+        <td><%= department.name %></td>
+        <td><%= department.indentifier %></td>
+        <td>FALTA ADICIONAR</td>
+        <td><%= link_to 'Edit', edit_department_path(id: department.id), method: :GET  %> </td>
+        <td><%= link_to 'Delete', department_path(id: department.id), method: :delete, data: { confirm: 'Tem certeza?' } %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+</main>
