@@ -18,13 +18,13 @@ ActiveRecord::Schema.define(version: 2022_03_31_120057) do
   create_table "college_subjects", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.bigint "departament_id"
+    t.bigint "department_id"
     t.string "indentifier"
     t.bigint "college_subject_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["college_subject_id"], name: "index_college_subjects_on_college_subject_id"
-    t.index ["departament_id"], name: "index_college_subjects_on_departament_id"
+    t.index ["department_id"], name: "index_college_subjects_on_department_id"
   end
 
   create_table "courses", force: :cascade do |t|
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 2022_03_31_120057) do
   end
 
   add_foreign_key "college_subjects", "college_subjects"
+  add_foreign_key "college_subjects", "departments"
   add_foreign_key "student_courses", "courses"
   add_foreign_key "student_courses", "students"
 end
