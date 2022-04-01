@@ -5,9 +5,7 @@
 <h2>+Department<h2>
 <%= form.label 'Name:'%>
     <%= form.text_field :name, class:'form-control', value: @department.name %>
-        <% @department.errors.full_messages_for(:name).each do |message| %>
-        <div class="message-error"><%= message %></div>
-        <% end %>
+    <%= error_message(@department, :name)%>
     <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
 <% end%>
 </div>
