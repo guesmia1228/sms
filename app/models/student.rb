@@ -6,9 +6,7 @@ class Student < ApplicationRecord
   has_one :student_courses
   has_one :course, through: :student_courses
 
-  private
-  
-  def random_number
-    "#{Date.today.year}-#{rand(0..1000000)}"
+  def identifier_prefix
+    "#{Date.today.year}-"
   end
 end

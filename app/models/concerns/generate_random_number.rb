@@ -10,4 +10,9 @@
       
       self.assign_attributes(identifier_method => number_generate)
     end
+
+    def random_number
+      prefix = respond_to?(:identifier_prefix) ? identifier_prefix : ''
+      "#{prefix}#{rand(0..1000000)}"
+    end
   end
