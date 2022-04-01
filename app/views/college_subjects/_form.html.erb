@@ -1,13 +1,13 @@
 <%= link_to 'BACK', college_subjects_path, class: 'btn btn-light back-home' %>
 
 <div class="student-title-she">
-<%= form_with model: @college_subject do |form| %>
-<h2>+ College Subject<h2>
-<%= form.label 'Name:'%>
-    <%= form.text_field :name, class:'form-control', value: @college_subject.name %>
-        <% @college_subject.errors.full_messages_for(:name).each do |message| %>
-        <div class="message-error"><%= message %></div>
-        <% end %>
-    <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
-<% end%>
+    <%= form_with model: @college_subject do |form| %>
+        <h2>+ College Subject<h2>
+        <%= form.label 'Name:'%>
+            <%= form.text_field :name, class:'form-control', value: @college_subject.name %>
+                <% @college_subject.errors.full_messages_for(:name).each do |message| %>
+                    <div class="message-error"><%= message %></div>
+            <% end %>
+        <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
+     <% end%>
 </div>
