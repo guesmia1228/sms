@@ -2,8 +2,8 @@
 
 <div class="student-title-she">
 <%= form_with model: @college_subject do |form| %>
-<h2>+ College Subject<h2>
-<%= form.label 'Name:'%>
+    <h2>+ College Subject<h2>
+    <%= form.label 'Name:'%>
     <%= form.text_field :name, class:'form-control', value: @college_subject.name %>
     <%= error_message(@college_subject, :name)%>
     <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
