@@ -5,7 +5,7 @@
 <h2>+Department<h2>
 <%= form.label 'Name:'%>
     <%= form.text_field :name, class:'form-control', value: @department.name %>
-    <%= error_message(@departmen, :name)%>
+    <%= error_message(@department, :name)%>
     <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
 <% end%>
 </div>
