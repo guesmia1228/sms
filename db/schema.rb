@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_31_120057) do
+ActiveRecord::Schema.define(version: 2022_04_01_163800) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,15 @@ ActiveRecord::Schema.define(version: 2022_03_31_120057) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "couse_subjects", force: :cascade do |t|
+    t.bigint "college_subject_id", null: false
+    t.bigint "course_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["college_subject_id"], name: "index_couse_subjects_on_college_subject_id"
+    t.index ["course_id"], name: "index_couse_subjects_on_course_id"
   end
 
   create_table "departments", force: :cascade do |t|
@@ -60,6 +69,8 @@ ActiveRecord::Schema.define(version: 2022_03_31_120057) do
 
   add_foreign_key "college_subjects", "college_subjects"
   add_foreign_key "college_subjects", "departments"
+  add_foreign_key "couse_subjects", "college_subjects"
+  add_foreign_key "couse_subjects", "courses"
   add_foreign_key "student_courses", "courses"
   add_foreign_key "student_courses", "students"
 end
