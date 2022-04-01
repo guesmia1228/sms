@@ -5,9 +5,7 @@
 <h2>+ College Subject<h2>
 <%= form.label 'Name:'%>
     <%= form.text_field :name, class:'form-control', value: @college_subject.name %>
-        <% @college_subject.errors.full_messages_for(:name).each do |message| %>
-        <div class="message-error"><%= message %></div>
-        <% end %>
+    <%= error_message(@college_subject, :name)%>
     <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
 <% end%>
 </div>
