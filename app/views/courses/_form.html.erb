@@ -1,0 +1,19 @@
+<%= link_to 'BACK', courses_path, class: 'btn btn-light back-home' %>
+
+<div class="student-title-she">
+<%= form_with model: @courses do |form| %>
+    <h2>+ COURSE<h2>
+    <div class="form-group">
+      <%= form.label 'Name:'%>
+      <%= form.text_field :name, class:'form-control', value: @course.name %>
+      <%= error_message(@course, :name)%>
+      <%= form.label 'Description:'%>
+      <%= form.text_area :description, class:'form-control', rows: '3', value: @course.description %>
+    </div>
+    <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
+<% end%>
+</div>
+
+    <%# <%= form.select :college_subject_ids, CollegeSubject.all.map { |value| [value.name, value.id]} %>
+
+    <%# form.collection_select :college_subject_ids, CollegeSubject.all, :id, :name, {}, {multiple: true} %>
