@@ -3,12 +3,12 @@
 <div class="student-title-she">
 <%= form_with model: @courses do |form| %>
     <h2>+ COURSE<h2>
-    <%= form.label 'Name:'%>
-    <%= form.text_field :name, class:'form-control', value: @course.name %>
-    <%= error_message(@course, :name)%>
-    <%= form.label 'Description:'%>
     <div class="form-group">
-        <%= form.text_area :description, class:'form-control', rows: '3', value: @course.description %>
+      <%= form.label 'Name:'%>
+      <%= form.text_field :name, class:'form-control', value: @course.name %>
+      <%= error_message(@course, :name)%>
+      <%= form.label 'Description:'%>
+      <%= form.text_area :description, class:'form-control', rows: '3', value: @course.description %>
     </div>
     <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
 <% end%>
