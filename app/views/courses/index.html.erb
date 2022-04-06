@@ -19,8 +19,8 @@
     <% @courses.each do |course| %>
       <tr>
         <td><%= course.name %></td>
-        <td><%= course.identifier %></td>
-        <td>FALTA ADICIONAR</td>
+        <td><%= course.indentifier %></td>
+        <td><%= course.college_subjects.map(&:name).join(", ")%></td>
         <td>FALTA ADICIONAR</td>
         <td><%= link_to 'Edit', edit_course_path(id: course.id), method: :GET  %> </td>
         <td><%= link_to 'Delete', course_path(id: course.id), method: :delete, data: { confirm: 'Tem certeza?' } %> </td>
@@ -28,3 +28,5 @@
     <% end %>
   </tbody>
 </table>
+
+<%# <td>course.college_subjects.map {|value| value.name}.join(", ")</td> %>
