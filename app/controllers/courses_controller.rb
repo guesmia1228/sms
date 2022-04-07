@@ -8,7 +8,6 @@ class CoursesController < ApplicationController
   end
 
   def create
-    binding.pry
     @course = Course.new(course_params)
     if @course.save
       redirect_to courses_path
