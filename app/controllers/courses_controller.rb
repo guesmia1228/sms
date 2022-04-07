@@ -38,6 +38,8 @@ class CoursesController < ApplicationController
   private
 
   def course_params
-    params.require(:course).permit(:name,:registration,:description,:college_subject_ids)
+    params.require(:course).permit(:name,:indentifier,:description, college_subject_ids: []).tap do |value|
+      value[:college_subject_ids] = value[:college_subject_ids].delete_if { |v| v.blank?}
+    end
   end
 end

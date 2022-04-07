@@ -3,8 +3,8 @@ class Student < ApplicationRecord
   validates :name, presence: true
   before_save :generate_random_number
 
-  has_one :student_courses, class_name: 'StudentCourse'
-  has_one :course, through: :student_courses
+  has_one :student_course, class_name: 'StudentCourse'
+  has_one :course, through: :student_course
 
   def identifier_prefix
     "#{Date.today.year}-"
