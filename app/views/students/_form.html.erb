@@ -5,7 +5,7 @@
 <h2>+STUDENT<h2>
 <%= form.label 'Name:'%>
     <%= form.text_field :name, class:'form-control'%>
-    <%= form.collection_select :course_id, Course.all, :id, :name%>
+    <%# <%= form.collection_select :course_id, Course.all, :id, :name%> %>
     <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
 <% end%>
 </div>
