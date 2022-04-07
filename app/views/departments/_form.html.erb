@@ -2,7 +2,7 @@
 
 <div class="student-title-she">
 <%= form_with model: @department do |form| %>
-<h2>+Department<h2>
+<h2>+Department</h2>
 <%= form.label 'Name:'%>
     <%= form.text_field :name, class:'form-control', value: @department.name %>
     <%= error_message(@department, :name)%>

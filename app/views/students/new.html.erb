@@ -1,13 +1,1 @@
-<%= link_to 'BACK', students_path, class: 'btn btn-light back-home' %>
-
-<div class="student-title-she">
-<%= form_with model: @student do |form| %>
-<h2>+STUDENT<h2>
-<%= form.label 'Name:'%>
-    <%= form.text_field :name, class:'form-control'%>
-          <% @student.errors.full_messages_for(:name).each do |message| %>
-          <div class="message-error"><%= message %></div>
-          <% end %>
-    <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
-<% end%>
-</div>
+<%= render 'form' %>
