@@ -38,6 +38,6 @@ class CollegeSubjectsController < ApplicationController
   private
 
   def college_subject_params
-    params.require(:college_subject).permit(:name, :indentifier)
+    params.require(:college_subject).permit(:name, :indentifier, :description)
   end
 end
