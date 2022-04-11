@@ -17,10 +17,30 @@ body {
   font-style: normal;
 }
 
-.form-group {
+h2, h3 {
+  left: 1em;
+}
+
+table {
+  color: #000000;
+  text-align: center;
+  left: 3%;
+  font-size: 1em;
+}
+
+.back-home {
   margin: 3%;
 }
 
-.classItems {
-  width: 20%;
+.create-student {
+  margin: 1em 0 2em 3%;
+}
+
+.form-control {
+  width: 40%;
+  margin: 2em 2em 1em 0;
+}
+
+.form-group, .form-create, .classItems  {
+  margin: 3%;
 }

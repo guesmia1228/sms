@@ -2,29 +2,6 @@
 // }
 //  ADICIONAR UM LERFT PARA TELAS GRANDES COM MEDIA-QUERYS
 
-.back-home {
-  margin: 3%;
-}
-
-.table {
-  text-align: center;
-  left: 3%;
-  font-size: 1em;
-}
-
-.form-control {
-  width: 40%;
-  margin: 2em 2em 1em 0;
-}
-
-h2, h3 {
-  margin: 0.5em 0.5em 0.5em 3%;
-}
-
-.create-student {
-  margin: 1em 0 2em 3%;
-}
-
 @media (max-width: 500px) {
   .table {
     font-size: 0.8em;
