@@ -1,10 +1,10 @@
 <%= link_to 'BACK', students_path, class: 'btn btn-light back-home' %>
 
-<div class="student-title-she">
-<%= form_with model: @student do |form| %>
-<h2>+STUDENT<h2>
-<%= form.label 'Name:'%>
-    <%= form.text_field :name, class:'form-control'%>
-    <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
-<% end%>
+<div class="form-create">
+    <%= form_with model: @student do |form| %>
+    <h2>+STUDENT</h2>
+    <%= form.label 'Name:'%>
+        <%= form.text_field :name, class:'form-control'%>
+        <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
+    <% end%>
 </div>
