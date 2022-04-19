@@ -11,7 +11,8 @@
     <tr>
       <th scope="col">NAME</th>
       <th scope="col">IDENTIFIER</th>
-      <th scope="col">Description</th>
+      <th scope="col">DESCRIPTION</th>
+      <th scope="col">DEPARTAMENT</th>
     </tr>
   </thead>
   <tbody>
@@ -20,6 +21,7 @@
         <td><%= college_subject.name %></td>
         <td><%= college_subject.indentifier %></td>
         <td><%= college_subject.description %></td>
+        <td><%= college_subject.department&.name%></td>
         <td><%= link_to 'Edit', edit_college_subject_path(id: college_subject.id), method: :GET  %> </td>
         <td><%= link_to 'Delete', college_subject_path(id: college_subject.id), method: :delete, data: { confirm: 'Tem certeza?' } %> </td>
       </tr>
