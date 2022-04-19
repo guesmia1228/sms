@@ -6,6 +6,7 @@
         <%= form.label 'Name:'%>
         <%= form.text_field :name, class:'form-control', value: @college_subject.name %>
         <%= error_message(@college_subject, :name)%>
+        <%= form.label 'Description:'%>
         <%= form.text_area :description, class:'form-control', rows: '3', value: @college_subject.description %>
         <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
     <% end%>
