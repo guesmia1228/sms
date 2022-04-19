@@ -19,7 +19,7 @@
         <td><%= course.name %></td>
         <td><%= course.indentifier %></td>
         <td><%= course.college_subjects.map(&:name).join(", ")%></td>
-        <td>FALTA ADICIONAR</td>
+        <td><%= course.description %></td>
         <td><%= link_to 'Edit', edit_course_path(id: course.id), method: :GET  %> </td>
         <td><%= link_to 'Delete', course_path(id: course.id), method: :delete, data: { confirm: 'Tem certeza?' } %> </td>
       </tr>
