@@ -8,6 +8,7 @@
       <%= error_message(@course, :name)%>
       <%= form.label 'Description:'%>
       <%= form.text_area :description, class:'form-control', rows: '3', value: @course.description %>
+      <%= form.label 'College Subjects:'%>
       <%= form.collection_select :college_subject_ids, CollegeSubject.all, :id, :name, {}, {multiple: true, id: 'slim-select', class: 'classItems'} %>
       <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
     </div>
