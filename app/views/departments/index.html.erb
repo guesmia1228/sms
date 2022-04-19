@@ -9,7 +9,6 @@
     <tr>
       <th scope="col">NAME</th>
       <th scope="col">IDENTIFIER</th>
-      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
@@ -17,7 +16,6 @@
       <tr>
         <td><%= department.name %></td>
         <td><%= department.indentifier %></td>
-        <td>FALTA ADICIONAR</td>
         <td><%= link_to 'Edit', edit_department_path(id: department.id), method: :GET  %> </td>
         <td><%= link_to 'Delete', department_path(id: department.id), method: :delete, data: { confirm: 'Tem certeza?' } %> </td>
       </tr>
