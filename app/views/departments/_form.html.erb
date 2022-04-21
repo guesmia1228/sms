@@ -1,8 +1,9 @@
 <%= link_to 'BACK', departments_path, class: 'btn btn-light back-home' %>
 
+<h2>+Department</h2>
+
 <div class="form-create">
     <%= form_with model: @department do |form| %>
-    <h2>+Department</h2>
     <%= form.label 'Name:'%>
     <%= form.text_field :name, class:'form-control', value: @department.name %>
     <%= error_message(@department, :name)%>

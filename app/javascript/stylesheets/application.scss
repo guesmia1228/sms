@@ -28,6 +28,12 @@ table {
   font-size: 1em;
 }
 
+@media (max-width: 500px) {
+  .table {
+    font-size: 0.4em;
+    left: 0%;  
+  }
+}
 .back-home {
   margin: 3%;
 }
