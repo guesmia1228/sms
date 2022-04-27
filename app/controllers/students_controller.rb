@@ -29,7 +29,6 @@ class StudentsController < ApplicationController
     else
       @student.build_student_course(course_id: params[:student][:course_id])
     end
-
     if @student.update(student_params)
       redirect_to students_path
     else
