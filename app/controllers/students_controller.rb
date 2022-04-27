@@ -10,6 +10,7 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.new(student_params)
+    @student.build_student_course(course_id: params[:student][:course_id])
     if @student.save
       redirect_to students_path
     else
@@ -23,6 +24,11 @@ class StudentsController < ApplicationController
 
   def update
     @student = Student.find(params[:id])
+    if @student.course
+      @student.student_course.update(course_id: params[:student][:course_id])
+    else
+      @student.build_student_course(course_id: params[:student][:course_id])
+    end
     if @student.update(student_params)
       redirect_to students_path
     else
