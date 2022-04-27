@@ -9,8 +9,11 @@
         <%= error_message(@college_subject, :name)%>
         <%= form.label 'Departament:'%>
         <%= form.collection_select :department_id, Department.all, :id, :name, {}, {class: 'classItems'} %>
-        <%= form.label 'Description:'%>
-        <%= form.text_area :description, class:'form-control', rows: '3', value: @college_subject.description %>
+
+        <div>
+            <%= form.label 'Description:', class:'label-form'%>
+            <%= form.text_area :description, class:'form-control', rows: '3', value: @college_subject.description %>
+        </div>
         <%= form.submit 'Submit', class:'btn btn-primary submit'%> 
     <% end%>
 </div>
